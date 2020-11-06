@@ -73,6 +73,7 @@ class Main extends Component {
                         <Form.Control 
                         as="textarea" 
                         rows={5}
+                        id="rdesc"
                         ref={(input) => { this.rdesc = input }}
                         required />
                     </Form.Group>   
