@@ -83,23 +83,26 @@ class App extends Component {
   
   render() {
     return (
-      <Router>
-        <Navbar />     
-        <Route exact path="/" component={Home} />
-        <Route exact path="/reviews" render={props => (
-          <React.Fragment>
-            { this.state.loading
-            ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
-            : <Main
-              reviews={this.state.reviews}
-              addReview={this.addReview}
-              fundReview={this.fundReview}
-            />
-            }
-          </React.Fragment>
-        )} />
-        <Footer />
-      </Router>
+      <div className="back">
+           <Router>
+          <Navbar />     
+          <Route exact path="/" component={Home} />
+          <Route exact path="/reviews" render={props => (
+            <React.Fragment>
+              { this.state.loading
+              ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
+              : <Main
+                reviews={this.state.reviews}
+                addReview={this.addReview}
+                fundReview={this.fundReview}
+              />
+              }
+            </React.Fragment>
+          )} />
+          <Footer />
+        </Router>
+      </div>
+     
     );
   }
 }

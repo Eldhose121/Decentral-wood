@@ -36,7 +36,10 @@ class Main extends Component {
                     this.props.addReview(genre, mname, rating, description)
                   }}>
                   <center>
-                  <h1>Write your Review</h1>
+                  <h1>Write your </h1>
+                  <br></br><br></br>
+                  <h1>Review</h1>
+                  <br></br>
                   <div class="form-container">
                     <Form.Group controlId="formBasicEmail">
                         <Form.Control
@@ -69,7 +72,7 @@ class Main extends Component {
                     </Form.Group>
                     <br/> 
                     <Form.Group controlId="exampleForm.ControlTextarea1">
-                        <Form.Label>Write your detailed movie review</Form.Label>
+                        <h4>Write your detailed movie review here</h4>
                         <Form.Control 
                         as="textarea" 
                         rows={5}
@@ -84,7 +87,8 @@ class Main extends Component {
                   </center>
                 </Form>
                 <br/><br/><br/><br/>
-                <h1>Search Reviews by Movie name</h1>
+                <h1>Search <br></br><br></br><br></br> Reviews by <br></br><br></br><br></br> Movie name</h1>
+                <br></br>
                 <input type="text" class="form-control" value={this.state.search} onChange={this.updateSearch.bind(this)} />
                 <p>&nbsp;</p>
                 { filteredReviews.map((review, key) => {
@@ -93,10 +97,10 @@ class Main extends Component {
                       <div className="card-header">
                       <p class="badge badge-primary">{review.genre}</p>
                       <br/>
-                      <h2>{review.mname}</h2>
-                      <small>Author: {review.author}</small>
+                      <h2 style={{color: "white"}}>{review.mname}</h2>
+                      <small style={{color: "white"}}>Author: {review.author}</small>
                       </div>
-                      <p>Rating: {review.rating} / 10</p>
+                      <p style={{color: "white"}}>Rating: {review.rating.toString()} / 10</p>
                       <ul id="postList" className="list-group list-group-flush">
                         <li className="list-group-item">
                           <p>{review.description}</p>
@@ -104,8 +108,9 @@ class Main extends Component {
                         </li>
                         <li key={key} className="list-group-item py-2">
                           <small className="float-left mt-1 text-muted">
-                            {review.ppl} people found this helpful.
+                            {review.ppl.toString()} user(s) found this helpful.
                           </small>      
+                          <br></br>
                           <p>If you also found this helpful, would you like to tip 0.1 ETH to the author?</p>
                           <button
                             className="btn btn-info"
