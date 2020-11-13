@@ -1,26 +1,33 @@
-# Decentral-Reviews
-A decentralized movie review and rating forum.
+# Decentral-wood
+A decentralized movie review and rating forum for movie critics and enthusiasts, deployable on Matic testnet.
 
-## Dependencies
+## Requirements
 
 [node](https://nodejs.org/en/download/)
 
-A wallet like [Metamask](https://metamask.io/) in your browser.
+You will also need an Ethereum wallet like [Metamask](https://metamask.io/) and set a custom RPC to https://rpc-mumbai.matic.today .
 
-For your wallet set a custom RPC to localhost:7545 and import accounts from ganache-cli by copying private keys.
+## Run the Decentral-wood dApp
 
-### Install truffle and ganache-cli
+### Clone the repo
+
+```
+$ git clone https://github.com/UltimateRoman/Decentral-wood.git
+$ cd Decentral-wood
+```
+
+### Install dependencies
+
 ```
 $ npm install -g truffle
-$ npm install -g ganache-cli
-```
-### Installation of Hercules
-```
-$ git clone https://github.com/UltimateRoman/Decentral-Reviews.git
-$ cd Decentral-Reviews
 $ npm install
-$ ganache-cli -p 7545
-$ truffle migrate --reset
-$ npm run start
 ```
+### Start the dApp
+
+```
+$ truffle migrate --network matic
+$ npm start
+```
+
+Enjoy the Decentral-wood experience!
 
