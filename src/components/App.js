@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import DMRforum from '../abis/DMRforum.json';
 import Web3 from 'web3';
 import Main from './Main'
+import Create from './Create'
 import Navbar from './Navbar'
 import Home from './Home'
 import Footer from './Footer'
@@ -87,13 +88,22 @@ class App extends Component {
            <Router>
           <Navbar />     
           <Route exact path="/" component={Home} />
+          <Route exact path="/create" render={props => (
+            <React.Fragment>
+              { this.state.loading
+              ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
+              : <Create
+                addReview={this.addReview}
+              />
+              }
+            </React.Fragment>
+          )} />
           <Route exact path="/reviews" render={props => (
             <React.Fragment>
               { this.state.loading
               ? <center><br/><br/><br/><br/><br/><br/><div class="loader"></div></center>
               : <Main
                 reviews={this.state.reviews}
-                addReview={this.addReview}
                 fundReview={this.fundReview}
               />
               }
