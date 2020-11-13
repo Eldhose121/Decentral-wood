@@ -3,7 +3,7 @@ A decentralized movie review and rating forum for movie critics and enthusiasts,
 
 ## Requirements
 
-[node](https://nodejs.org/en/download/)
+[NodeJS](https://nodejs.org/en/download/)
 
 You will also need an Ethereum wallet like [Metamask](https://metamask.io/) and set a custom RPC to https://rpc-mumbai.matic.today .
 
