@@ -1,21 +1,24 @@
 import React from 'react';
+import pic from '../bb.jpg';
 
 function Home() {
     return (
         <React.Fragment>
             <br></br>
-            <h1 color="white">Decentral-Reviews</h1>
+            <h1 color="white">Decentral-wood</h1>
             <br/>
-            <h3 style={{textAlign: "center", color: "yellow"}}>By Winners Pothumukku</h3>
+            <h3 style={{textAlign: "center", color: "yellow"}}>By Team Winners Pothumukku</h3>
                 <br></br>
-                <br></br><br></br>
-                <br></br>
+                
+                <center>
+                <img src={pic} width="500px" height="350px"/>
+                </center>
                 <h2  style={{color: "lightyellow"}}>&nbsp;About</h2>
                 <h4 >A decentralized movie rating and review platform.</h4>
                 <br></br>
-                <h4>Decentral Reviews provides a blockchain based forum for movie enthusiasts and critics. Incorporating blockchain with our review system provided transparency, authenticity and guaranteed anonymity for the person concerned. </h4>
+                <h4>Decentral wood provides a blockchain based forum for movie enthusiasts and critics. Incorporating blockchain with our review system provided transparency, authenticity and guaranteed anonymity for the person concerned. </h4>
                 <br></br>
-                <h4>Decentral Reviews beats the conventional movie review platforms by offering the following benefits : </h4>
+                <h4>Decentral wood beats the conventional movie review platforms by offering the following benefits : </h4>
                 <h5>Increased Security</h5>
                 <h5>Greater Transparency</h5>
                 <h5>Increased Efficiency</h5>
