@@ -1,5 +1,8 @@
-# Decentral-wood
-A decentralized movie review and rating forum for movie critics and enthusiasts, deployable on Matic testnet.
+# Ethereum Track: Decentral-wood
+A decentralized movie review and rating forum for movie critics and enthusiasts, deployable on Matic testnet. 
+<br/>
+A user can submit a review on the dAppby specifying the movie name, genre, personal rating and a brief description about the movie. Any user who find a review useful can tip the author in in crypto, ensuring credible payments and avoiding the need for intermediaries, also reducing transaction charges in the process. This encourages credible reviews on our platform. Since posting reviews on the platform involves some gas fees, unecessary reviews can be avoided and quality can be upheld on the dApp.Other movie enthusiasts can also search for movie reviews by their name.
+
 
 ## Requirements
 
